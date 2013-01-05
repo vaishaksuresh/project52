@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Portfolio
+title: Project 52
 ---
 <ul class="entries">
 	{% for post in paginator.posts %}
@@ -23,7 +23,7 @@ title: Portfolio
 	{% else %}
 	<!--<span class="previous">Previous</span>-->
 	{% endif %}
-	<span class="page_number ">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
+	<span class="page_number ">{{paginator.page}} of {{paginator.total_pages}}</span>
 	{% if paginator.next_page %}
 	<a href="/page{{paginator.next_page}}" class="next ">Next</a>
 	{% else %}
