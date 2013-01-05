@@ -1,0 +1,4 @@
+server: true
+permalink: /:year/:title/
+paginate: 1
+
