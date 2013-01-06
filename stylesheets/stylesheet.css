@@ -355,6 +355,9 @@ footer a {
 footer a:hover {
   color: #444;
 }
+.pagination {
+text-align: center;
+}
 
 /* MISC */
 .clearfix:after {
