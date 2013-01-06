@@ -21,12 +21,10 @@ title: Project 52
 		<!--<span class="next ">Next</span>-->
 		{% endif %}
 	</h3>
-	{% for post in paginator.posts %}
-	<h2>{{ post.title }}</h2>
-	<a href="{{ post.url }}">
-		<img src="{{ post.image }}" />
-	</a>
-	{% endfor %}
-
-
 </div>
+{% for post in paginator.posts %}
+<h2>{{ post.title }}</h2>
+<a href="{{ post.url }}">
+	<img src="{{ post.image }}" />
+</a>
+{% endfor %}
