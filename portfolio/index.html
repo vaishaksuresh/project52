@@ -1,17 +1,7 @@
 ---
 layout: default
-title: Portfolio
+title: Project 52
 ---
-<ul class="entries">
-  {% for post in paginator.posts %}
-  <h3>{{ post.title }}</h3>
-  <li>
-    <a href="{{ post.url }}">
-      <img src="{{ post.image }}" />
-    </a>
-  </li>
-  {% endfor %}
-</ul>
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
@@ -26,3 +16,13 @@ title: Portfolio
   <span class="next ">Next</span>
   {% endif %}
 </div>
+<ul class="entries">
+  {% for post in paginator.posts %}
+  <h3>{{ post.title }}</h3>
+  <li>
+    <a href="{{ post.url }}">
+      <img src="{{ post.image }}" />
+    </a>
+  </li>
+  {% endfor %}
+</ul>
