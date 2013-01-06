@@ -2,16 +2,13 @@
 layout: default
 title: Project 52
 ---
-<ul class="entries">
 	{% for post in paginator.posts %}
 	<h2>{{ post.title }}</h2>
-	<li>
 		<a href="{{ post.url }}">
 			<img src="{{ post.image }}" />
 		</a>
-	</li>
 	{% endfor %}
-</ul>
+
 <!-- Pagination links -->
 <div class="pagination">
 	<h3>
