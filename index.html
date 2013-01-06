@@ -24,8 +24,8 @@ title: Project 52
 </div>
 {% for post in paginator.posts %}
 <h2>{{ post.title }}</h2>
-<a href="{{ post.url }}">
+<!-- <a href="{{ post.url }}"> -->
 	<img src="{{ post.image }}" />
-</a>
-<h3>{{ post.content }}</h3>
+<!-- </a> -->
+{{ post.content }}
 {% endfor %}
